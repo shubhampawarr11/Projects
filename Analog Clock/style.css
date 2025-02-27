@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    rgba(174, 0, 255, 0.5),
+    rgba(255, 0, 0, 0.5)
+  );
+  font-family: "Arial", sans-serif;
+}
+
+/* Clock Styles */
+.clock {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(242, 236, 243, 0.726) 60%,
+    #ffffff 100%
+  );
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Clock Hands */
+.hour-hand,
+.minute-hand,
+.second-hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom;
+  transform: translateX(-50%);
+  transition-timing-function: steps(1);
+}
+
+/* Hour Hand */
+.hour-hand {
+  width: 8px;
+  height: 60px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Minute Hand */
+.minute-hand {
+  width: 6px;
+  height: 80px;
+  background-color: #555;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Second Hand */
+.second-hand {
+  width: 2px;
+  height: 100px;
+  background-color: #f44336;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  animation: tick 60s linear infinite;
+}
+
+/* Center Point */
+.center-point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Tick Animation for Seconds Hand */
+@keyframes tick {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  background-image: url(/Digital\ Clock/images/background.jpg);
+  background-size: cover;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 7px solid rgb(243, 238, 238);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: black;
+  box-shadow: 0 0 15px rgba(22, 21, 21, 0.6);
+}
+
+.time {
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: serif;
+}

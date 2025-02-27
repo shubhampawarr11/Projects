@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: url("/Age\ Calculator/Images/background.jpg") no-repeat center
+    center fixed;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.age-calculator {
+  background: rgba(88, 2, 247, 0.5);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#enter {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #023f80;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #032a53;
+}
+
+.result {
+  margin-top: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(20, 20, 20, 0.863);
+  background-color: rgba(250, 242, 242, 0.733);
+}
