@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://fav.farm/✅" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Drawing App</h1>
+      <div class="tools">
+        <label for="color" id="color">Color:</label>
+        <input type="color" id="color" value="#000000" />
+
+        <label for="brush-size" id="brush">Brush Size:</label>
+        <input type="range" id="brush-size" min="1" max="50" value="5" />
+
+        <button id="clear-btn">Clear Canvas</button>
+        <button id="undo-btn">Undo</button>
+        <button id="redo-btn">Redo</button>
+      </div>
+      <canvas id="drawing-board"></canvas>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

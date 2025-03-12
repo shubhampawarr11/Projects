@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f59c9c3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background-color: #ece3e3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-family: cursive;
+}
+
+.tools {
+  margin-bottom: 20px;
+}
+
+.tools label {
+  margin-right: 10px;
+}
+
+.tools input[type="color"] {
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.tools input[type="range"] {
+  width: 100px;
+  cursor: pointer;
+}
+
+.tools button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.tools button:hover {
+  background-color: #0056b3;
+}
+
+.tools button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.tools button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+canvas {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: crosshair;
+}
+
+#clear-btn {
+  background-color: red;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+#undo-btn {
+  background-color: chartreuse;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+#redo-btn {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+#color {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+#brush {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+
+}
+
+input#color {
+  height: 18px;
+  margin-right: 10px;
+}
+
+input#brush-size {
+  height: 8px;
+  margin-right: 10px;
+}
