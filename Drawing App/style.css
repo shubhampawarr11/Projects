@@ -77,31 +77,31 @@ canvas {
 
 #clear-btn {
   background-color: red;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
 }
 
 #undo-btn {
   background-color: chartreuse;
   color: black;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
 }
 
 #redo-btn {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
 }
 
-#color {
-  font-family: 'Courier New', Courier, monospace;
+#color-text {
+  font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
+  /* height: 18px; */
 }
 
 #brush {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
-
 }
 
 input#color {
