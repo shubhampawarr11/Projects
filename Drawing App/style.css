@@ -16,7 +16,8 @@ body {
 .container {
   text-align: center;
   background-color: #ece3e3;
-  padding: 20px;
+  padding: 10px;
+  width: 71rem;;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -73,6 +74,7 @@ canvas {
   border: 1px solid #ccc;
   background-color: #fff;
   cursor: crosshair;
+  width: 65rem;
 }
 
 #clear-btn {
